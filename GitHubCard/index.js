@@ -92,13 +92,14 @@ function createCard(param){
     name.textContent = param.name;
     username.textContent = param.login;
     location.textContent = param.location;
-    container.textContent = `Profile: ${param.html_url}`;
+    // container.textContent = `Profile: ${profile}`;
     profile.setAttribute('href', param.html_url);
+    profile.textContent = `Profile: ` + param.html_url;
     followers.textContent = `Followers: ${param.followers}`;
-    following.textContent = (`Following: ${param.following}`);
+    following.textContent = `Following: ${param.following}`;
     bio.textContent = (`Bio: ${param.bio}`);
 
-
+console.log(profile);
  
     return card
 
